@@ -7,21 +7,21 @@ Android SwipeRefreshLayout that allows you to set the color scheme via XML.
 ## Setup
 
 Step 1: Add the JitPack repository to your root build.gradle file
-````
+```groovy
 allprojects {
     repositories {
         ...
         maven { url 'https://jitpack.io' }
     }
 }
-````
+```
 
 Step 2: Add the dependency
-````
+```groovy
 dependencies {
     compile 'com.github.banasiak:ColoredSwipeRefreshLayout:0.1'
 }
-````
+```
 
 ## Usage
 Use this layout as you would a normal SwipeRefreshLayout from the [Android v4 Support Library](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html).
@@ -30,7 +30,7 @@ Set the colors using the `app:animationColorArray` XML attribute.
 ## Example
 
 #### layout.xml
-````    
+```xml    
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -52,10 +52,10 @@ Set the colors using the `app:animationColorArray` XML attribute.
     </com.banasiak.android.library.csrl.ColoredSwipeRefreshLayout>
     
 </LinearLayout>
-````
+```
 
 #### colors.xml
-````
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer-array name="swipe_refresh_colors">
@@ -63,4 +63,6 @@ Set the colors using the `app:animationColorArray` XML attribute.
         <item>@color/colorAccent</item>
     </integer-array>
 </resources>
-````
+```
+## LICENSE
+[Apache License 2.0](LICENSE)
